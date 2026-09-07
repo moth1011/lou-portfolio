@@ -611,31 +611,24 @@ button {
   }
 }
 
-/* Keep mobile project screenshots fully visible. */
-.project-portrait .project-cover {
-  height: 520px;
+/* Layer phone screenshots inside the standard project image dimensions. */
+.project-portrait .image-button .portrait-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+  filter: blur(20px) brightness(0.8);
+  transform: scale(1.15);
+  pointer-events: none;
+}
+
+.project-portrait .project-cover,
+.project-portrait .project-gallery img:not(.portrait-backdrop) {
+  position: relative;
   object-fit: contain;
-}
-
-.project-portrait .project-gallery {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.project-portrait .gallery-image-button,
-.project-portrait .project-gallery img {
-  height: 150px;
-}
-
-.project-portrait .project-gallery img {
-  object-fit: contain;
-}
-
-@media (max-width: 760px) {
-  .project-portrait .project-cover {
-    height: 420px;
-  }
-
-  .project-portrait .project-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  background: transparent;
+  transform: none;
 }

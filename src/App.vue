@@ -258,6 +258,13 @@ const projects = [
               :aria-label="`放大查看 ${project.title}`"
               @click="openImage(project.cover, project.title)"
             >
+              <img
+                v-if="project.portrait"
+                class="portrait-backdrop"
+                :src="project.cover"
+                alt=""
+                aria-hidden="true"
+              />
               <img class="project-cover" :src="project.cover" :alt="project.title" />
               <span class="image-hint">点击放大</span>
             </button>
@@ -270,6 +277,13 @@ const projects = [
                 :aria-label="`放大查看 ${project.title} 截图`"
                 @click="openImage(image, `${project.title} 截图`)"
               >
+                <img
+                  v-if="project.portrait"
+                  class="portrait-backdrop"
+                  :src="image"
+                  alt=""
+                  aria-hidden="true"
+                />
                 <img
                 :src="image"
                 :alt="`${project.title} 截图`"
