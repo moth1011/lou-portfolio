@@ -89,10 +89,10 @@ const projects = [
   },
   {
     id: '03',
-    title: '高端餐饮空间浏览系统',
+    title: '花旗3D空间展示系统',
     tag: '花旗',
     summary:
-      '沉浸式空间浏览与服务信息展示系统，适合包厢导览、菜品介绍和门店场景展示。',
+      '沉浸式空间浏览与服务信息展示系统，预览播放效果。',
     accent: 'right',
     cover: '/projects/花旗/微信图片_20260814184322.png',
     gallery: [
@@ -104,7 +104,7 @@ const projects = [
   },
   {
     id: '04',
-    title: '城市节日专题互动页面',
+    title: '高端餐饮空间浏览系统',
     tag: 'hello!上海',
     summary:
       '围绕城市节庆活动打造的视觉专题页，适合品牌宣传、节日活动联动与多内容入口整合。',
@@ -281,7 +281,7 @@ const projects = [
       </div>
       <div>
         <p class="footer-label">电话</p>
-        <p>17824929582</p>
+        <p>+86 17824929582</p>
       </div>
       <div id="about">
         <p class="footer-label">定位</p>
