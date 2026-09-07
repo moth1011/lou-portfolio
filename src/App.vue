@@ -4,7 +4,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 const activeImage = ref(null)
 const stats = [
   { value: '3+', label: '年开发经验' },
-  { value: '7', label: '项目案例' },
+  { value: '8', label: '项目案例' },
   { value: 'H5 / iPad / 小程序 / App', label: '多端适配' },
   { value: 'Vue 3 + Spring Cloud', label: '全栈开发' }
 ]
@@ -160,6 +160,27 @@ const projects = [
       '/projects/报价单/微信图片_20260814184802.png',
       '/projects/报价单/微信图片_20260814184815.png'
     ]
+  },
+  {
+    id: '08',
+    title: '城市之窗客户服务小程序',
+    tag: '小程序',
+    summary:
+      '面向城市地标媒体客户的移动服务平台，集项目进度、上屏节目验收、播出排期与拍摄交付于一体，便于随时查看项目状态与展示效果。',
+    accent: 'left',
+    portrait: true,
+    cover: '/projects/小程序/微信图片_20260907120920.jpg',
+    gallery: [
+      '/projects/小程序/微信图片_20260907120920.jpg',
+      '/projects/小程序/微信图片_20260907120818.jpg',
+      '/projects/小程序/微信图片_20260907120836.jpg',
+      '/projects/小程序/微信图片_20260907120841.jpg',
+      '/projects/小程序/微信图片_20260907120847.jpg',
+      '/projects/小程序/微信图片_20260907120852.jpg',
+      '/projects/小程序/微信图片_20260907120856.jpg',
+      '/projects/小程序/微信图片_20260907120900.jpg',
+      '/projects/小程序/微信图片_20260907120903.jpg'
+    ]
   }
 ]
 
@@ -221,7 +242,7 @@ const projects = [
           v-for="project in projects"
           :key="project.id"
           class="project-card"
-          :class="`accent-${project.accent}`"
+          :class="[`accent-${project.accent}`, { 'project-portrait': project.portrait }]"
         >
           <div class="project-copy">
             <p class="project-id">{{ project.id }}</p>
