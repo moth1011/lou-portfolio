@@ -220,15 +220,7 @@ const projects = [
 
         <div class="hero-visual" aria-hidden="true">
           <div class="skyline-card">
-            <div class="skyline-glow"></div>
-            <div class="skyline-grid"></div>
-            <div class="skyline-bars">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+            <img class="skyline-image" src="/shanghai-skyline.png" alt="" fetchpriority="high" />
           </div>
         </div>
       </section>

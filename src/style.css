@@ -162,62 +162,15 @@ button {
   box-shadow: var(--shadow);
 }
 
-.skyline-glow {
+.skyline-image {
   position: absolute;
-  inset: auto 8% 10% auto;
-  width: 52%;
-  height: 52%;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent 66%);
-}
-
-.skyline-grid {
-  position: absolute;
-  inset: auto 0 0;
-  height: 38%;
-  background:
-    linear-gradient(rgba(27, 54, 103, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(27, 54, 103, 0.12) 1px, transparent 1px);
-  background-size: 100% 36px, 36px 100%;
-}
-
-.skyline-bars {
-  position: absolute;
-  inset: auto 12% 15% 12%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-  height: 62%;
-}
-
-.skyline-bars span {
-  width: 16%;
-  border-radius: 14px 14px 0 0;
-  background: linear-gradient(180deg, rgba(24, 73, 203, 0.22), rgba(18, 34, 71, 0.82));
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28);
-}
-
-.skyline-bars span:nth-child(1) {
-  height: 52%;
-}
-
-.skyline-bars span:nth-child(2) {
-  height: 84%;
-}
-
-.skyline-bars span:nth-child(3) {
-  height: 68%;
-}
-
-.skyline-bars span:nth-child(4) {
+  inset: 0;
+  display: block;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
-.skyline-bars span:nth-child(5) {
-  height: 76%;
-}
-
 .section-heading {
   text-align: center;
   margin-bottom: 28px;
